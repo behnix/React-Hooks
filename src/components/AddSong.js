@@ -4,7 +4,8 @@ const AddSong = ({ addSong }) => {
   const [title, setTitle] = useState("");
   const handleSubmit = (e) => {
     e.preventDefault();
-    addSong(title)
+    addSong(title);
+    setTitle('');
   };
   return (
     <form onSubmit={handleSubmit}>
